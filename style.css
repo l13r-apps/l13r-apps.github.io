@@ -1,0 +1,22 @@
+body {
+    font-family: 'SF mono', SFMono-Regular, ui-monospace, monospace;
+    color: #333;
+    background-color: #fff;
+    height: 100vh; /* full viewport height */
+    margin: 0; /* remove default margin */
+}
+
+#section {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
+
+#text {
+    display: block;
+    font-size: 1em;
+    width: 40em;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+}
