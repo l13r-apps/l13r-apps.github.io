@@ -1,26 +1,93 @@
 body {
-    font-family: 'SF mono', SFMono-Regular, ui-monospace, monospace;
-    color: #333;
-    background-color: #fff;
-    height: 100vh; /* full viewport height */
-    margin: 0; /* remove default margin */
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'Menlo', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d4d4d4;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
-#section {
-    font-size: 1.5em;
+#section, #text {
     display: block;
-    text-align: center;
-}
-
-#text {
-    display: block;
-    font-size: 1em;
-    width: 40em;
+    max-width: 1080px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 2em 1.5em;
     text-align: left;
 }
 
 h1, h2, h3 {
+    font-size: inherit;
+    font-weight: normal;
     margin: 0;
+}
+
+p {
+    margin: 0.4em 0;
+}
+
+ul {
+    margin: 0.4em 0;
+    padding-left: 2em;
+    list-style: none;
+}
+
+ul li::before {
+    content: "- ";
+    color: #d4d4d4;
+}
+
+a {
+    color: #6cb6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: normal;
+    color: #c586c0;
+}
+
+/* Swift-style syntax coloring */
+.keyword { color: #ff7ab2; }
+.type { color: #5dd8ff; }
+.string { color: #fc6a5d; }
+.comment { color: #6c7986; }
+.func { color: #b281eb; }
+.property { color: #67B7A4; }
+.number { color: #d0bf69; }
+
+/* Line numbers gutter effect */
+.line::before {
+    content: attr(data-line);
+    display: inline-block;
+    width: 2.5em;
+    margin-right: 1.5em;
+    text-align: right;
+    color: #4a4a4a;
+    user-select: none;
+}
+
+.line {
+    display: block;
+    white-space: pre-wrap;
+}
+
+.blank {
+    display: block;
+    height: 1.6em;
+}
+
+.blank::before {
+    content: attr(data-line);
+    display: inline-block;
+    width: 2.5em;
+    margin-right: 1.5em;
+    text-align: right;
+    color: #4a4a4a;
+    user-select: none;
 }

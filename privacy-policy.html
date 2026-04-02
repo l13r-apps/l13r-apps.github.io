@@ -9,56 +9,69 @@
   </head>
   <body>
     <div id="text">
-        <h1><a href="index.html">l13r apps</a></h1>
-        <h2>Datenschutzerkl&auml;rung</h2>
-        <p>
-            <h3>1. Verantwortlicher</h3>
-            <p>l13r apps UG (haftungsbeschränkt)<br>
-            c/o Oberste Chefetage<br/>
-            Fl&auml;mingstr. 4<br/>
-            15738 Zeuthen<br/>
-            Germany<br/>
-            <br/>
-            Geschäftsführer: Lukas W&uuml;rzburger<br>
-            E-Mail: lukas@l13r-apps.com</p>
-
-            <h3>2. Hosting über GitHub Pages</h3>
-            <p>Unsere Website wird auf <strong>GitHub Pages</strong> gehostet, einem Dienst von GitHub, Inc., 
-            88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.<br>
-            Beim Aufruf unserer Website erhebt GitHub u. a. folgende Daten (Server-Logfiles): 
-            IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, Datum und Uhrzeit des Zugriffs.<br>
-            Weitere Infos: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</a>.</p>
-
-            <h3>3. Domain-Provider Namecheap</h3>
-            <p>Die Domain wird über <strong>Namecheap, Inc.</strong>, 4600 East Washington Street, Suite 305, Phoenix, AZ 85034, USA, registriert.<br>
-            Namecheap selbst verarbeitet beim Besuch unserer Website keine zusätzlichen personenbezogenen Daten.<br>
-            Weitere Infos: <a href="https://www.namecheap.com/legal/general/privacy-policy/" target="_blank">Namecheap Privacy Policy</a>.</p>
-
-            <h3>4. Datenverarbeitung auf unserer Website</h3>
-            <p>Wir speichern selbst keine personenbezogenen Daten beim Besuch unserer Website.</p>
-
-            <h3>5. Cookies & Tracking</h3>
-            <p>Unsere Website verwendet <strong>keine Cookies, kein Tracking und keine Analysetools</strong>.</p>
-
-            <h3>6. Links zu externen Angeboten (Apple App Store)</h3>
-            <p>Unsere Website enthält Links zu unseren Apps im Apple App Store. 
-            Beim Klicken verlassen Sie unsere Website. 
-            Verantwortlich für die Datenverarbeitung ist dort ausschließlich <strong>Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA</strong>.</p>
-
-            <h3>7. Rechte der betroffenen Personen</h3>
-            <ul>
-                <li>Auskunft (Art. 15 DSGVO)</li>
-                <li>Berichtigung (Art. 16 DSGVO)</li>
-                <li>Löschung (Art. 17 DSGVO)</li>
-                <li>Einschränkung (Art. 18 DSGVO)</li>
-                <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
-                <li>Widerspruch (Art. 21 DSGVO)</li>
-            </ul>
-            <p>Zur Ausübung dieser Rechte wenden Sie sich bitte an: lukas@l13r-apps.com</p>
-
-            <h3>8. Stand</h3>
-            <p>01.10.2025</p>
-        </p>
+<span class="line" data-line="1"><span class="comment">// <a href="index.html">l13r apps</a></span></span>
+<span class="line" data-line="2"><span class="comment">// Datenschutzerkl&auml;rung</span></span>
+<span class="blank" data-line="3"></span>
+<span class="line" data-line="4"><span class="keyword">import</span> <span class="type">Foundation</span></span>
+<span class="blank" data-line="5"></span>
+<span class="line" data-line="6"><span class="keyword">struct</span> <span class="type">PrivacyPolicy</span> {</span>
+<span class="blank" data-line="7"></span>
+<span class="line" data-line="8">    <span class="comment">// MARK: - 1. Verantwortlicher</span></span>
+<span class="blank" data-line="9"></span>
+<span class="line" data-line="10">    <span class="keyword">let</span> <span class="property">company</span>  = <span class="string">"l13r apps UG (haftungsbeschr&auml;nkt)"</span></span>
+<span class="line" data-line="11">    <span class="keyword">let</span> <span class="property">address</span>  = <span class="string">"Warthestr. 67, 12051 Berlin, Germany"</span></span>
+<span class="line" data-line="12">    <span class="keyword">let</span> <span class="property">director</span> = <span class="string">"Lukas W&uuml;rzburger"</span></span>
+<span class="line" data-line="13">    <span class="keyword">let</span> <span class="property">email</span>    = <span class="string">"lukas@l13r-apps.com"</span></span>
+<span class="blank" data-line="14"></span>
+<span class="line" data-line="15">    <span class="comment">// MARK: - 2. Hosting &uuml;ber GitHub Pages</span></span>
+<span class="blank" data-line="16"></span>
+<span class="line" data-line="17">    <span class="keyword">let</span> <span class="property">hosting</span> = <span class="type">HostingInfo</span>(</span>
+<span class="line" data-line="18">        <span class="property">provider</span>: <span class="string">"GitHub Pages (GitHub, Inc.)"</span>,</span>
+<span class="line" data-line="19">        <span class="property">address</span>: <span class="string">"88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA"</span>,</span>
+<span class="line" data-line="20">        <span class="property">collectedData</span>: <span class="string">"IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, Datum und Uhrzeit"</span>,</span>
+<span class="line" data-line="21">        <span class="property">moreInfo</span>: <span class="string">"<a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</a>"</span></span>
+<span class="line" data-line="22">    )</span>
+<span class="blank" data-line="23"></span>
+<span class="line" data-line="24">    <span class="comment">// MARK: - 3. Domain-Provider Namecheap</span></span>
+<span class="blank" data-line="25"></span>
+<span class="line" data-line="26">    <span class="keyword">let</span> <span class="property">domain</span> = <span class="type">DomainInfo</span>(</span>
+<span class="line" data-line="27">        <span class="property">provider</span>: <span class="string">"Namecheap, Inc."</span>,</span>
+<span class="line" data-line="28">        <span class="property">address</span>: <span class="string">"4600 East Washington Street, Suite 305, Phoenix, AZ 85034, USA"</span>,</span>
+<span class="line" data-line="29">        <span class="property">note</span>: <span class="string">"Keine zus&auml;tzliche Datenverarbeitung beim Websitebesuch"</span>,</span>
+<span class="line" data-line="30">        <span class="property">moreInfo</span>: <span class="string">"<a href="https://www.namecheap.com/legal/general/privacy-policy/" target="_blank">Namecheap Privacy Policy</a>"</span></span>
+<span class="line" data-line="31">    )</span>
+<span class="blank" data-line="32"></span>
+<span class="line" data-line="33">    <span class="comment">// MARK: - 4. Datenverarbeitung auf unserer Website</span></span>
+<span class="blank" data-line="34"></span>
+<span class="line" data-line="35">    <span class="keyword">let</span> <span class="property">dataProcessing</span> = <span class="string">"Wir speichern selbst keine personenbezogenen Daten."</span></span>
+<span class="blank" data-line="36"></span>
+<span class="line" data-line="37">    <span class="comment">// MARK: - 5. Cookies &amp; Tracking</span></span>
+<span class="blank" data-line="38"></span>
+<span class="line" data-line="39">    <span class="keyword">let</span> <span class="property">cookies</span> = <span class="string">"Keine Cookies, kein Tracking, keine Analysetools."</span></span>
+<span class="blank" data-line="40"></span>
+<span class="line" data-line="41">    <span class="comment">// MARK: - 6. Links zu externen Angeboten</span></span>
+<span class="blank" data-line="42"></span>
+<span class="line" data-line="43">    <span class="keyword">let</span> <span class="property">externalLinks</span> = <span class="string">"Links zum Apple App Store. Beim Klicken verlassen</span></span>
+<span class="line" data-line="44">        <span class="string">Sie unsere Website. Verantwortlich: Apple Inc., One Apple</span></span>
+<span class="line" data-line="45">        <span class="string">Park Way, Cupertino, CA 95014, USA."</span></span>
+<span class="blank" data-line="46"></span>
+<span class="line" data-line="47">    <span class="comment">// MARK: - 7. Rechte der betroffenen Personen</span></span>
+<span class="blank" data-line="48"></span>
+<span class="line" data-line="49">    <span class="keyword">let</span> <span class="property">rights</span>: [<span class="type">String</span>] = [</span>
+<span class="line" data-line="50">        <span class="string">"Auskunft (Art. 15 DSGVO)"</span>,</span>
+<span class="line" data-line="51">        <span class="string">"Berichtigung (Art. 16 DSGVO)"</span>,</span>
+<span class="line" data-line="52">        <span class="string">"L&ouml;schung (Art. 17 DSGVO)"</span>,</span>
+<span class="line" data-line="53">        <span class="string">"Einschr&auml;nkung (Art. 18 DSGVO)"</span>,</span>
+<span class="line" data-line="54">        <span class="string">"Daten&uuml;bertragbarkeit (Art. 20 DSGVO)"</span>,</span>
+<span class="line" data-line="55">        <span class="string">"Widerspruch (Art. 21 DSGVO)"</span></span>
+<span class="line" data-line="56">    ]</span>
+<span class="blank" data-line="57"></span>
+<span class="line" data-line="58">    <span class="keyword">let</span> <span class="property">contact</span> = <span class="string">"lukas@l13r-apps.com"</span></span>
+<span class="blank" data-line="59"></span>
+<span class="line" data-line="60">    <span class="comment">// MARK: - 8. Stand</span></span>
+<span class="blank" data-line="61"></span>
+<span class="line" data-line="62">    <span class="keyword">let</span> <span class="property">lastUpdated</span> = <span class="string">"01.10.2025"</span></span>
+<span class="line" data-line="63">}</span>
     </div>
   </body>
 </html>

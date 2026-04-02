@@ -9,22 +9,35 @@
   </head>
   <body>
     <div id="section">
-        <p>
-            <h1>🔨<br/>l13r apps</h1>
-            Apps for Apple platforms
-        </p>
-        <p>
-            <h2>📱<br/>Our Apps</h2>
-            <a href="https://stockmonitorapp.com" target="_blank">Stock Monitor</a> - Stock ticker for the macOS menu bar<br/>            
-        </p>
-        <p>
-            <h2>📜<br/>Legal</h2>
-            <p>
-                <a href="privacy-policy.html">Privacy policy</a> ·
-                <a href="imprint.html">Imprint</a>
-            </p>
-            &copy; 2025 l13r apps UG (haftungsbeschr&auml;nkt)
-        </p>
+<span class="line" data-line="1"><span class="comment">// l13r apps</span></span>
+<span class="line" data-line="2"><span class="comment">// Apps for Apple platforms</span></span>
+<span class="blank" data-line="3"></span>
+<span class="line" data-line="4"><span class="keyword">import</span> <span class="type">Foundation</span></span>
+<span class="blank" data-line="5"></span>
+<span class="line" data-line="6"><span class="keyword">struct</span> <span class="type">L13rApps</span> {</span>
+<span class="blank" data-line="7"></span>
+<span class="line" data-line="8">    <span class="comment">// Our Apps</span></span>
+<span class="line" data-line="9">    <span class="keyword">let</span> <span class="property">apps</span> = [</span>
+<span class="line" data-line="10">        <span class="type">App</span>(</span>
+<span class="line" data-line="11">             <span class="property">name</span>: <span class="string">"Stock Monitor"</span>,</span>
+<span class="line" data-line="12">             <span class="property">description</span>: <span class="string">"Stock ticker for the macOS menu bar"</span>,</span>
+<span class="line" data-line="13">             <span class="property">link</span>: <span class="string">"<a href="https://stockmonitorapp.com" target="_blank">https://stockmonitorapp.com</a>"</span></span>
+<span class="line" data-line="14">        )</span>
+<span class="line" data-line="15">    ]</span>
+<span class="blank" data-line="16"></span>
+<span class="line" data-line="17">    <span class="comment">// Open for freelance work</span></span>
+<span class="line" data-line="18">    <span class="keyword">let</span> <span class="property">about</span> = <span class="string">"Freelance software engineer with 20+ years of experience</span></span>
+<span class="line" data-line="19">        <span class="string">across Apple platforms (iOS, iPadOS, macOS, watchOS).</span></span>
+<span class="line" data-line="20">        <span class="string">Currently open to freelance opportunities."</span></span>
+<span class="blank" data-line="21"></span>
+<span class="line" data-line="22">    <span class="comment">// Legal</span></span>
+<span class="line" data-line="23">    <span class="keyword">let</span> <span class="property">legal</span> = [</span>
+<span class="line" data-line="24">        <a href="privacy-policy.html"><span class="string">"Privacy policy"</span></a>,</span>
+<span class="line" data-line="25">        <a href="imprint.html"><span class="string">"Imprint"</span></a></span>
+<span class="line" data-line="26">    ]</span>
+<span class="blank" data-line="27"></span>
+<span class="line" data-line="28">    <span class="keyword">let</span> <span class="property">copyright</span> = <span class="string">"&copy; <script>document.write(new Date().getFullYear())</script> l13r apps UG (haftungsbeschr&auml;nkt)"</span></span>
+<span class="line" data-line="29">}</span>
     </div>
   </body>
 </html>
